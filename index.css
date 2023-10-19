@@ -10,54 +10,179 @@ body {
 }
 
 header {
-    height: 25%;
-    width: 100%;
-    background-color: burlywood;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 3px 10px rgb(255, 255, 255);
+}
+
+.menu {
     display: flex;
-    
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
 }
 
-div #carouselExampleSlidesOnly {
-    height: 80%;
-    width: 100%;
-
-}
-#foto {
-    border-radius: 50%;
-    height: 75%;
-}
-
-section#start {
-    width: 40%;
+.nome {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
-ul {
-    width: 100%;
-    height: 20%;
+.nome h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.lista-menu {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    align-items: center;
+}
+
+.lista-menu ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 
-main {
-    height: 65%;
-    width: 100%;
-    background-color: bisque;
+.item-menu {
+    margin: 0 1rem;
 }
 
-section#home {
-    width: 50%;
-    height: 100%;
+.link-menu {
+    text-decoration-line: none;
+    font-size: 1.55rem;
+    color: rgb(255, 255, 255);
+}
+
+ul li a:hover {
+    border-radius: 10%;
+    background-color: white;
+    color: black;
+}
+
+main {
+    background-color: rgb(160, 160, 160);
+}
+
+#inicio {
+    position: relative;
+    margin: auto;
+}
+
+#inicio img {
+    display: block;
+    width: 100vw;
+}
+
+.ini {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+#inicio h1 {
+    color: aliceblue;
+    font-size: 3.5rem;
+}
+
+#sobre {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.titulo {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    font-size: 4rem;
+    color: aliceblue;
+    
+}
+
+#sobre img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 3rem;
+}
+
+#sobre div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sobre p {
+    font-size: 1rem;
+    display: block;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  
+}
+
+#projeto {
+    background-color: rgb(0, 0, 0);
+    
+    color: white;
+}
+
+#projeto img {
+    width: 20rem;
+    height: 10rem;
+}
+
+
+#contato {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.container {
+    margin: 7rem;
+}
+
+.final {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+.final img {
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 footer {
-    height: 10%;
-    width: 100%;
-    background-color: rgb(218, 179, 129);
+    background-color: black;
+    height: 4.5rem;
+}
+
+@media screen and (max-width: 760px) {
+    
+    #sobre div {
+        flex-direction: column;
+    }
+
+    #sobre div h1 {
+        margin-bottom: 10%;
+    }
+    #inicio h1 {
+        font-size: 200%;
+    }
+    
+    .titulo {
+        font-size: 300%;
+    }
+
+    .link-menu {
+        font-size: 1.15rem;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+    
 }
